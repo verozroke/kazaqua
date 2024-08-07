@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col gap-8">
+    <ContactUs />
+    <PartnerForm />
   </div>
 </template>
 
