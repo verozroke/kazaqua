@@ -2,9 +2,9 @@
   <div class="flex flex-col gap-12">
     <!-- hero -->
     <AboutUs />
-    <!-- pluses -->
+    <AdvantagesSection />
     <!-- products -->
-    <!-- medias -->
+    <SocialSection />
     <ContactUs />
     <PartnerForm />
   </div>

@@ -1,7 +1,6 @@
+import { rootClasses } from "./formkit.theme"
 import { defineFormKitConfig } from '@formkit/vue'
 
-export default defineFormKitConfig({
-  // rules: {},
-  // locales: {},
-  // etc. 
-})
+export default defineFormKitConfig(() => ({
+  config: { rootClasses }
+}))

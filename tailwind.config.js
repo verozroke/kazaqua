@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    './formkit.theme.ts',
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
     './pages/**/*.vue',
@@ -8,6 +9,7 @@ module.exports = {
     './app.vue',
     './error.vue',
   ],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       inter: ['Inter'],
@@ -20,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@formkit/themes/tailwindcss')],
 }

@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="flex items-center justify-between py-3 mt-8">
-        <span class="text-gray-600 ">&copy; KAZAQUA 2024</span>
+        <span class="text-gray-600 ">&copy; KAZAQUA 2024. All rights reserved.</span>
       </div>
     </div>
   </footer>

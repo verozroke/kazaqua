@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
-    "@formkit/nuxt": "^1.6.5",
+    "@formkit/core": "latest",
+    "@formkit/nuxt": "latest",
+    "@formkit/themes": "latest",
+    "@formkit/vue": "latest",
     "@headlessui/vue": "^1.7.22",
     "@heroicons/vue": "^2.1.5",
     "@nuxt/image": "^1.7.0",

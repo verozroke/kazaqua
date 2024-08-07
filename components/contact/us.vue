@@ -1,61 +1,65 @@
 <template>
-  <div class="flex gap-5 rounded-lg min-h-96 ContactUs py-5 px-7 bg-water">
+  <div class="flex gap-5 rounded-lg min-h-96 ContactUs py-8 px-7 bg-water shadow-md">
     <div class="w-[50%] flex flex-col gap-6">
       <div class="text-7xl text-white font-bold">Заказать воду</div>
       <div class="text-base text-slate-200 max-w-96">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
         aspernatur! Atque temporibus iure id magni eaque, sequi quaerat a illum!</div>
     </div>
-    <div class="w-[50%]">
-      <FormKit
-        type="form"
-        @submit="sendOrder"
-      >
+    <div class="w-[50%] flex justify-end">
+      <div class="bg-white shadow-md border w-[70%] rounded-md flex flex-col items-center py-10">
         <FormKit
-          type="text"
-          name="name"
-          id="name"
-          validation="required"
-          label="Имя"
-          placeholder="“Scarlet Sword”"
-        />
-        <FormKit
-          type="tel"
-          label="Номер телефона"
-          placeholder="xxx-xxx-xxxx"
-          validation="matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
-          :validation-messages="{
-          matches: 'Phone number must be in the format xxx-xxx-xxxx',
-        }"
-          validation-visibility="dirty"
-        />
-        <FormKit
-          type="text"
-          name="address"
-          id="address"
-          validation="required"
-          label="Адрес доставки"
-          placeholder="Укажите адрес доставки"
-        />
-        <FormKit
-          type="select"
-          label="Ваш заказ"
-          name="product"
-          id="product"
-          placeholder="Выберите наш продукт"
-          :options="['Вода 1', 'Вода 2', 'Вода 3']"
-        />
+          type="form"
+          style="width: 70%; display: flex; flex-direction: column;"
+          @submit="sendOrder"
+          submit-label="Заказать воду"
+        >
+          <FormKit
+            type="text"
+            class="max-w-full"
+            name="name"
+            id="name"
+            validation="required"
+            label="Имя"
+            placeholder="“Scarlet Sword”"
+          />
+          <FormKit
+            type="tel"
+            label="Номер телефона"
+            placeholder="xxx-xxx-xxxx"
+            validation="matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
+            :validation-messages="{
+            matches: 'Phone number must be in the format xxx-xxx-xxxx',
+          }"
+            validation-visibility="dirty"
+          />
+          <FormKit
+            type="text"
+            name="address"
+            id="address"
+            validation="required"
+            label="Адрес доставки"
+            placeholder="Укажите адрес доставки"
+          />
+          <FormKit
+            type="select"
+            label="Ваш заказ"
+            name="product"
+            id="product"
+            placeholder="Выберите наш продукт"
+            :options="['Вода 1', 'Вода 2', 'Вода 3']"
+          />
 
-        <FormKit
-          type="number"
-          label="Количество товара"
-          name="productNumber"
-          value="1"
-          step="1"
-        />
+          <FormKit
+            type="number"
+            label="Количество товара"
+            name="productNumber"
+            value="1"
+            step="1"
+          />
+          <!-- name, phone, address, product, -->
+        </FormKit>
+      </div>
 
-
-        <!-- name, phone, address, product, -->
-      </FormKit>
     </div>
   </div>
 </template>
