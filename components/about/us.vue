@@ -13,7 +13,9 @@
         <span class="text-black font-bold text-5xl leading-8">символ <span class="text-white">чистоты и
             качества</span></span>
       </div>
-      <div class="image absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[300px]">
+      <div
+        class="image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[300px]"
+      >
         <NuxtImg
           class="w-full h-full rounded-lg object-cover object-center"
           src="https://images.unsplash.com/photo-1527066236128-2ff79f7b9705?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

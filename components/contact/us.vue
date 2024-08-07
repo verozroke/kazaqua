@@ -2,8 +2,10 @@
   <div class="flex gap-5 rounded-lg min-h-96 ContactUs py-8 px-7 bg-water shadow-md">
     <div class="w-[50%] flex flex-col gap-6">
       <div class="text-7xl text-white font-bold">Заказать воду</div>
-      <div class="text-base text-slate-200 max-w-96">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+      <div class="text-base flex-1 text-slate-200 max-w-96">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Pariatur,
         aspernatur! Atque temporibus iure id magni eaque, sequi quaerat a illum!</div>
+      <NuxtImg src="/contact.png" />
     </div>
     <div class="w-[50%] flex justify-end">
       <div class="bg-white shadow-md border w-[70%] rounded-md flex flex-col items-center py-10">

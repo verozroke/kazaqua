@@ -7,7 +7,7 @@
       />
     </div>
     <div class="flex flex-col gap-2">
-      <div class="text-xl font-bold">{{ card.title }}</div>
+      <div class="text-xl font-bold text-water">{{ card.title }}</div>
       <div class="text-base text-slate-600 font-medium">{{ card.subtitle }}</div>
     </div>
   </div>

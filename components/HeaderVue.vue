@@ -74,7 +74,7 @@
               class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2"
             >
               <button
-                class="bg-water pb-[2px] font-medium ml-6 text-white rounded w-full h-9 lg:w-fit group flex items-center  disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100   hover:bg-darkwater active:bg-gray-200/75  lg:text-sm lg:h-8 px-3.5 justify-center"
+                class="bg-water pb-[2px] font-medium ml-6 text-white rounded w-full h-9 lg:w-fit group flex items-center  disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100   hover:bg-darkwater active:bg-darkwater/75  lg:text-sm lg:h-8 px-3.5 justify-center"
               >
                 <span>Заказать воду</span>
               </button>
