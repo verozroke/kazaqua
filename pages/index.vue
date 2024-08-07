@@ -1,5 +1,10 @@
 <template>
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col gap-12">
+    <!-- hero -->
+    <AboutUs />
+    <!-- pluses -->
+    <!-- products -->
+    <!-- medias -->
     <ContactUs />
     <PartnerForm />
   </div>
