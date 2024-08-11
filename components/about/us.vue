@@ -14,7 +14,7 @@
             качества</span></span>
       </div>
       <div
-        class="image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[300px]"
+        class="image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[500px]"
       >
         <NuxtImg
           class="w-full h-full rounded-lg object-cover object-center"
@@ -22,14 +22,13 @@
         />
       </div>
       <div class="text-lg text-slate-200 max-w-[680px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi quas molestiae reprehenderit quia
-        dignissimos eum maxime ex illum inventore animi asperiores nihil, dolorem facilis? Ad quidem maiores quas.
-        Perferendis, eos eveniet enim velit aliquid ducimus beatae sed reprehenderit aliquam necessitatibus dolorem
-        corrupti cumque pariatur, commodi, autem vero. Fugit, mollitia. <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi quas molestiae reprehenderit quia
-        dignissimos eum maxime ex illum inventore animi asperiores nihil, dolorem facilis? Ad quidem maiores quas.
-        Perferendis, eos eveniet enim velit aliquid ducimus beatae sed reprehenderit aliquam necessitatibus dolorem
-        corrupti cumque pariatur, commodi, autem vero. Fugit, mollitia.
+        Наша компания с более чем 20-летним опытом работы гордится тем, что является крупнейшим поставщиком чистой и
+        качественной воды в регионе. Мы обслуживаем города Жезказган и Сатпаев, а также многочисленные промышленные и
+        государственные объекты, обеспечивая надежное и стабильное водоснабжение. <br> <br>
+        Среди наших клиентов такие ведущие компании, как "Казахмыс", "Самрук-Казына", Казмунайгаз, Казахтелеком и
+        Казпочта, которые доверяют нам благодаря нашему высокому уровню обслуживания. Вода KAZAQUA ассоциируется с
+        чистотой и качеством, соответствуя самым высоким стандартам безопасности, и мы всегда стремимся к
+        индивидуальному подходу и оперативному решению любых вопросов наших клиентов.
       </div>
     </div>
   </div>

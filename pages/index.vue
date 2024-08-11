@@ -3,7 +3,7 @@
     <!-- hero -->
     <AboutUs />
     <AdvantagesSection />
-    <!-- products -->
+    <ProductSection />
     <SocialSection />
     <ContactUs />
     <PartnerForm />

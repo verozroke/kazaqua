@@ -20,6 +20,7 @@
     "@nuxt/image": "^1.7.0",
     "axios": "^1.7.2",
     "nuxt": "^3.12.4",
+    "nuxt-swiper": "^1.2.2",
     "vue": "latest"
   },
   "devDependencies": {
