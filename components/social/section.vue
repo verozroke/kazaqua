@@ -1,5 +1,8 @@
 <template>
-  <div class="max-w-7xl px-7">
+  <div
+    id="Social"
+    class="max-w-7xl px-7"
+  >
     <div class="grid gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       <div class="max-w-xl lg:max-w-lg text-gray-300">
         <h2 class=" text-water font-bold leading-10 text-7xl mb-7">Связь с нами

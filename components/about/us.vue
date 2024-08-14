@@ -1,5 +1,8 @@
 <template>
-  <div class="pt-56 relative">
+  <div
+    id="About"
+    class="pt-56 relative"
+  >
     <span class="text-water font-bold absolute top-[144px] text-7xl px-7">О нас</span>
     <div class="relative flex gap-5 rounded-lg min-h-96 ContactUs py-5 px-7 shadow-md bg-water border">
       <div class="absolute flex flex-col -top-[220px] right-[165px] z-20">

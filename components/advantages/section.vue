@@ -1,5 +1,8 @@
 <template>
-  <div class="">
+  <div
+    id="Advantages"
+    class=""
+  >
     <span class="text-water font-bold  text-7xl px-7">Наши преимущества</span>
     <div class="relative flex items-center gap-10 flex-wrap rounded-lg py-8 px-7">
       <AdvantagesCard

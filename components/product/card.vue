@@ -1,5 +1,8 @@
 <template>
-  <div class="relative h-[450px] w-[300px] bg-white rounded-md shadow-xl border">
+  <div
+    @click="scrollDown('Order')"
+    class="relative h-[450px] w-[300px] bg-white rounded-md shadow-xl border"
+  >
     <NuxtImg
       :src="product.image"
       class="w-full h-full inset-0 absolute object-center bg-white rounded-md object-cover"

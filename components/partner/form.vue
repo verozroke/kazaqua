@@ -1,5 +1,8 @@
 <template>
-  <div class="flex gap-5 min-h-96 ContactUs py-8 px-7 shadow-md border rounded-lg">
+  <div
+    id="Partner"
+    class="flex gap-5 min-h-96 ContactUs py-8 px-7 shadow-md border rounded-lg"
+  >
     <div class="w-[50%] flex flex-col gap-6">
       <div class="text-7xl text-water font-bold">Стать партнером</div>
       <div class="text-base flex-1 text-slate-600 max-w-96">Заполните форму ниже, чтобы присоединиться к числу наших

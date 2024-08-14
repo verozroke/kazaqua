@@ -14,3 +14,12 @@ export function goTo(url: string) {
   a.target = '_blank';
   a.click()
 }
+
+
+export function scrollDown(blockID: string) {
+  const $block = document.getElementById(blockID) ?? document.createElement('div')
+  $block.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+}
