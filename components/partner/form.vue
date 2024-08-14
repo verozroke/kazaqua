@@ -18,6 +18,7 @@
           <FormKit
             type="text"
             name="company-name"
+            v-model="companyName"
             id="company-name"
             validation="required"
             label="Название компании"
@@ -26,6 +27,7 @@
           <FormKit
             type="text"
             name="contact-person"
+            v-model="contactPerson"
             id="contact-person"
             validation="required"
             label="Контактное лицо"
@@ -34,24 +36,27 @@
           <FormKit
             type="tel"
             label="Номер телефона"
-            placeholder="xxx-xxx-xxxx"
-            validation="matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
-            :validation-messages="{
-            matches: 'Phone number must be in the format xxx-xxx-xxxx',
-          }"
-            validation-visibility="dirty"
+            v-model="phone"
+            name="phone"
+            ]
+            validation="required"
+            id="phone"
+            placeholder="+77123456789"
           />
           <FormKit
             type="email"
             label="Email"
+            v-model="email"
             name="email"
             validation="required|email"
             validation-visibility="live"
-            placeholder="vikas@school.edu"
+            placeholder="vikas@gmail.com"
           />
           <FormKit
             type="textarea"
             name="description"
+            v-model="description"
+            validation="required"
             label="Ваше предложение"
             placeholder="Опишите ваше предложение"
           />
@@ -69,8 +74,56 @@
   setup
   lang="ts"
 >
+import axios from 'axios';
 
-const sendOrder = () => {
+
+const companyName = ref('')
+const contactPerson = ref('')
+const phone = ref('')
+const email = ref('')
+const description = ref('')
+
+
+const clear = () => {
+  companyName.value = ''
+  phone.value = ''
+  email.value = ''
+  contactPerson.value = ''
+  description.value = ''
+}
+
+
+const sendOrder = async (e: any) => {
+  if (!companyName.value || !contactPerson.value || !phone.value || !email.value || !description.value) {
+    alert('Поля не должны быть пустыми.')
+    return
+  }
+
+  if (!isPhone(phone.value)) {
+    alert('Введите номер телефона по примеру. Пример: +77123456789')
+    return
+  }
+
+  if (!isEmail(email.value)) {
+    alert('Введите почту корректно!')
+    return
+  }
+
+  try {
+    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbyhOsLYP6xIa2zfeeANRFqBoNd3VT8d8WQdNsTNrNNogbJ81rTrYEa4CfD6LBS-rRGvLA/exec', {
+      companyName: companyName.value,
+      phone: phone.value,
+      email: email.value,
+      contactPerson: contactPerson.value,
+      description: description.value,
+    })
+
+    // on success
+    alert(data)
+    clear()
+  } catch (error: any) {
+    alert(error || error.message || 'Произошла ошибка')
+  }
 
 }
 

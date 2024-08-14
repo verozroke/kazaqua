@@ -19,13 +19,15 @@
             class="max-w-full"
             name="name"
             id="name"
+            v-model="name"
             validation="required"
             label="Имя"
-            placeholder="“Scarlet Sword”"
+            placeholder="Иван Огуречкин"
           />
           <FormKit
             type="tel"
             label="Номер телефона"
+            v-model="phone"
             placeholder="xxx-xxx-xxxx"
             validation="matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
             :validation-messages="{
@@ -37,6 +39,7 @@
             type="text"
             name="address"
             id="address"
+            v-model="address"
             validation="required"
             label="Адрес доставки"
             placeholder="Укажите адрес доставки"
@@ -45,17 +48,12 @@
             type="select"
             label="Ваш заказ"
             name="product"
+            v-model="product"
             id="product"
             placeholder="Выберите наш продукт"
-            :options="['Вода 1', 'Вода 2', 'Вода 3']"
-          />
-
-          <FormKit
-            type="number"
-            label="Количество товара"
-            name="productNumber"
-            value="1"
-            step="1"
+            :options="[
+            `Подставка под бутыль 19л передвижная`, `Подставка под бутыль 19л (диспенсер)`, `Помпа AquaWork российское производство`, `Помпа китайская`, `Электрическая помпа`, `Вода 19л первая бутылка 2000, следующие (замены)`
+          ]"
           />
           <!-- name, phone, address, product, -->
         </FormKit>
@@ -69,6 +67,11 @@
   setup
   lang="ts"
 >
+
+const name = ref('')
+const phone = ref('')
+const address = ref('')
+const product = ref('')
 
 const sendOrder = () => {
 
