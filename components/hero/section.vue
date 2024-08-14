@@ -12,7 +12,7 @@
     </a>
     <span class="text-white mb-10 font-bold text-5xl leading-8 flex items-center gap-3">Чистота <span
         class="text-water underline underline-offset-[10px] decoration-wavy"
-      >воды</span> <span class="text-6xl">-</span>
+      >воды</span> <span class="text-6xl">-></span>
       чистота
       <span class="text-water underline underline-offset-[10px] decoration-wavy">жизни</span></span>
     <button

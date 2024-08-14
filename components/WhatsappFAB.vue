@@ -1,7 +1,7 @@
 <template>
   <button
     @click="goToWhatsapp"
-    class="p-0  bg-whatsapp flex items-center justify-center w-12 h-12 z-10 fixed bottom-5 right-5 bg-opacity-100 rounded-full hover:bg-opacity-75 hover:cursor active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none"
+    class="p-0  bg-whatsapp flex items-center justify-center w-12 h-12 z-30 fixed bottom-5 right-5 bg-opacity-100 rounded-full hover:bg-opacity-75 hover:cursor active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none"
   >
     <NuxtImg
       class="w-6 h-6 inline-block"
