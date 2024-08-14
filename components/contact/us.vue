@@ -67,14 +67,59 @@
   setup
   lang="ts"
 >
+import axios from 'axios';
+
+
+export type ProductSelectItem = {
+  title: string
+  number: number
+}
 
 const name = ref('')
 const phone = ref('')
 const address = ref('')
 const product = ref('')
+const productItems = ref<ProductSelectItem[]>([])
+const products = computed(() => productItems.value.length > 0 ? productItems.value.map(item => `${item.title} ${item.number} шт.`) : [])
 
-const sendOrder = () => {
 
+const clear = () => {
+  name.value = ''
+  phone.value = ''
+  address.value = ''
+  productItems.value = []
+}
+
+
+
+const sendOrder = async (e: any) => {
+
+  if (!name.value || !address.value || !phone.value || !products.value) {
+    alert('Поля не должны быть пустыми.')
+    return
+  }
+
+  if (!isPhone(phone.value)) {
+    alert('Введите номер телефона по примеру. Пример: +77123456789')
+    return
+  }
+
+
+
+  try {
+    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbxJFMXpgnldFiGjgP5yBswjnqLnnZvN2UO8aOTQgpDKFh6jglp0zQty2RrWm7TZkl8k/exec', {
+      name: name.value,
+      phone: phone.value,
+      address: address.value,
+      products: products.value.join(', '),
+    })
+
+    // on success
+    alert(data)
+    clear()
+  } catch (error: any) {
+    alert(error || error.message || 'Произошла ошибка')
+  }
 }
 
 </script>

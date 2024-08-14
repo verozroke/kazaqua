@@ -110,7 +110,7 @@ const sendOrder = async (e: any) => {
   }
 
   try {
-    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbyhOsLYP6xIa2zfeeANRFqBoNd3VT8d8WQdNsTNrNNogbJ81rTrYEa4CfD6LBS-rRGvLA/exec', {
+    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbxXEj8bkKd4ZuwQXZ5qh32luVyebz8zq8SNA2k-leDy2cevdYF5P2vqRcIEoM9146AylQ/exec', {
       companyName: companyName.value,
       phone: phone.value,
       email: email.value,
