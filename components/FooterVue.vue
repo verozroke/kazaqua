@@ -35,8 +35,13 @@
           </a>
         </div>
       </div>
-      <div class="flex items-center justify-between py-3 mt-8">
+      <div class="flex flex-col justify-between py-3 gap-5 mt-8">
         <span class="text-gray-600 ">&copy; KAZAQUA 2024. Все права защищены.</span>
+        <NuxtImg
+          src="/cert.png"
+          @click="openCertificate"
+          class="w-40 opacity-50  hover:opacity-100 hover:scale-110 transition-all"
+        />
       </div>
     </div>
   </footer>
@@ -47,6 +52,15 @@
   lang="ts"
 >
 import { WHATSAPP_LINK, INSTAGRAM_LINK } from '~/core/constants/constants'
+
+
+const openCertificate = () => {
+  const link = document.createElement('a')
+  link.href = '/cert.pdf'
+  link.target = "_blank"
+  link.click()
+}
+
 
 </script>
 
