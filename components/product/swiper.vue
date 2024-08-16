@@ -56,13 +56,13 @@ const products = ref<Product[]>([
   {
     id: '3',
     title: 'Помпа AquaWork российское производство',
-    image: '/products/3.jpg',
+    image: '/products/3.png',
     price: '3500₸'
   },
   {
     id: '4',
     title: 'Помпа китайская',
-    image: '/products/4.jpg',
+    image: '/products/4.png',
     price: '2000₸'
   },
   {
@@ -74,7 +74,7 @@ const products = ref<Product[]>([
   {
     id: '6',
     title: 'Вода 19л первая бутылка 2000, следующие (замены)',
-    image: '/products/6.jpg',
+    image: '/products/6.png',
     price: '700₸'
   },
 ])
