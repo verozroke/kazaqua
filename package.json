@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.2",
     "@formkit/core": "latest",
     "@formkit/nuxt": "latest",
     "@formkit/themes": "latest",

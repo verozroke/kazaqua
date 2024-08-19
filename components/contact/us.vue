@@ -31,12 +31,10 @@
             type="tel"
             label="Номер телефона"
             v-model="phone"
-            placeholder="xxx-xxx-xxxx"
-            validation="matches:/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/"
-            :validation-messages="{
-            matches: 'Phone number must be in the format xxx-xxx-xxxx',
-          }"
-            validation-visibility="dirty"
+            name="phone"
+            validation="required"
+            id="phone"
+            placeholder="+77123456789"
           />
           <FormKit
             type="text"
@@ -52,6 +50,7 @@
             label="Ваш заказ"
             name="product"
             v-model="product"
+            @input="(v) => addProduct(v!)"
             id="product"
             placeholder="Выберите наш продукт"
             :options="[
@@ -59,9 +58,9 @@
           ]"
           />
           <!-- name, phone, address, product, -->
+          <ContactProductControl v-model="productItems" />
         </FormKit>
       </div>
-
     </div>
   </div>
 </template>
@@ -78,6 +77,9 @@ export type ProductSelectItem = {
   number: number
 }
 
+
+
+
 const name = ref('')
 const phone = ref('')
 const address = ref('')
@@ -91,6 +93,13 @@ const clear = () => {
   phone.value = ''
   address.value = ''
   productItems.value = []
+}
+
+const addProduct = (productName: string) => {
+  productItems.value.push({
+    number: 1,
+    title: productName
+  })
 }
 
 
@@ -110,7 +119,10 @@ const sendOrder = async (e: any) => {
 
 
   try {
-    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbxJFMXpgnldFiGjgP5yBswjnqLnnZvN2UO8aOTQgpDKFh6jglp0zQty2RrWm7TZkl8k/exec', {
+
+    console.log(products.value.join(', '))
+
+    const { data } = await axios.postForm('https://script.google.com/macros/s/AKfycbxTT3nVk8IXfM2HcKKFQZ-3PPUZUHGrBFwPjmAssnVcM2bw0zVEqeotbCRJn40trk9D/exec', {
       name: name.value,
       phone: phone.value,
       address: address.value,

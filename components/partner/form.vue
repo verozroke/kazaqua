@@ -41,7 +41,6 @@
             label="Номер телефона"
             v-model="phone"
             name="phone"
-            ]
             validation="required"
             id="phone"
             placeholder="+77123456789"
