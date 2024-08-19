@@ -1,7 +1,7 @@
 <template>
   <div
     style="height: calc(100vh - 72px)"
-    class="z-30 flex flex-col gap-5 items-center justify-center"
+    class="z-30 flex flex-col gap-5 items-center justify-center select-none"
   >
     <a
       href="/"

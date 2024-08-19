@@ -10,7 +10,7 @@
       <NuxtImg src="/contact.png" />
     </div>
     <div class="w-[50%] flex justify-end">
-      <div class="bg-white shadow-md border w-[70%] rounded-md flex flex-col items-center py-10">
+      <div class="bg-white select-none shadow-md border w-[70%] rounded-md flex flex-col items-center py-10">
         <FormKit
           type="form"
           style="width: 70%; display: flex; flex-direction: column;"

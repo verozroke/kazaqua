@@ -5,7 +5,7 @@
   >
     <span class="text-water font-bold absolute top-[144px] text-7xl px-7">О нас</span>
     <div class="relative flex gap-5 rounded-lg min-h-96 ContactUs py-5 px-7 shadow-md bg-water border">
-      <div class="absolute flex flex-col -top-[220px] right-[165px] z-20">
+      <div class="select-none absolute flex flex-col -top-[220px] right-[165px] z-20">
         <a
           href="/"
           aria-label="kazaqua logo"
@@ -17,7 +17,7 @@
             качества</span></span>
       </div>
       <div
-        class="image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[500px]"
+        class=" select-none image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[500px]"
       >
         <NuxtImg
           class="w-full h-full rounded-lg object-cover object-center"

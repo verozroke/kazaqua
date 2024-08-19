@@ -11,7 +11,7 @@
 
     </div>
     <div class="w-[50%] flex justify-end">
-      <div class="bg-white  w-[70%] rounded-md flex flex-col items-center py-10">
+      <div class="bg-white  w-[70%] select-none rounded-md flex flex-col items-center py-10">
         <FormKit
           type="form"
           style="width: 70%; display: flex; flex-direction: column;"
