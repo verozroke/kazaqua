@@ -7,9 +7,10 @@
             <a
               href="/"
               aria-label="kazaqua logo"
-              class="font-black text-water leading-5 text-2xl"
+              class="font-black text-water flex flex-col leading-5 text-2xl"
             >
               <span class="tracking-tighter">KAZ</span> <br> <span class="tracking-wide">AQUA</span>
+              <span class="text-sm text-white">Жезказган</span>
             </a>
 
           </div>
