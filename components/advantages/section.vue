@@ -3,10 +3,11 @@
     id="Advantages"
     class=""
   >
-    <span class="text-water font-bold  text-7xl px-7">Наши преимущества</span>
-    <div class="relative flex items-center gap-10 flex-wrap rounded-lg py-8 px-7">
+    <span class="text-water font-bold text-4xl lg:text-7xl lg:px-7">Наши
+      преимущества</span>
+    <div class="relative flex items-center gap-5 lg:gap-10 flex-wrap rounded-lg py-8 lg:px-7">
       <AdvantagesCard
-        class="w-[30%]"
+        class="w-full lg:w-[30%]"
         v-for="card in cards"
         :key="card.id"
         :card

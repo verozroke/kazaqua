@@ -1,9 +1,9 @@
 <template>
   <header class="z-30">
     <nav class="z-30 w-full">
-      <div class="px-6 2xl:px-0 select-none">
-        <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
-          <div class="w-full items-center flex justify-between lg:w-auto">
+      <div class="px-0 select-none">
+        <div class="flex items-center justify-between py-6">
+          <div class="w-full items-center flex justify-between ">
             <a
               href="/"
               aria-label="kazaqua logo"
@@ -11,30 +11,11 @@
             >
               <span class="tracking-tighter">KAZ</span> <br> <span class="tracking-wide">AQUA</span>
             </a>
-            <div class="flex lg:hidden">
-              <button
-                aria-label="humburger"
-                id="menu"
-                class="relative border border-gray-950/30  size-9 rounded-full transition duration-300 active:scale-95"
-              >
-                <div
-                  aria-hidden="true"
-                  id="line1"
-                  class="m-auto h-[1.5px] w-4 rounded bg-gray-900 transition duration-300"
-                ></div>
-                <div
-                  aria-hidden="true"
-                  id="line2"
-                  class="m-auto mt-1.5 h-[1.5px] w-4 rounded bg-gray-900 transition duration-300"
-                ></div>
-              </button>
-            </div>
+
           </div>
-          <div
-            class="w-full h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap"
-          >
-            <div class="mt-6 text-white md:-ml-4 lg:pr-4 lg:mt-0">
-              <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0">
+          <div class="w-full hidden lg:flex  justify-end items-center space-y-0 h-fit flex-nowrap">
+            <div class="text-white md:-ml-4 pr-4 mt-0">
+              <ul class="tracking-wide text-sm flex space-y-0">
                 <li>
                   <span
                     @click="scrollDown('About')"
@@ -71,11 +52,11 @@
             </div>
 
             <div
-              class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] border-white dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2"
+              class="gap-2 pb-0  border-[--ui-light-border-color] border-white dark:border-[--ui-dark-border-color] items-center flex flex-row space-y-0 w-fit border-l border-t-0 pt-0 pl-2"
             >
               <button
                 @click="scrollDown('Order')"
-                class="bg-water pb-[2px] font-medium ml-6 text-white rounded w-full h-9 lg:w-fit group flex items-center  disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100   hover:bg-darkwater active:bg-darkwater/75  lg:text-sm lg:h-8 px-3.5 justify-center"
+                class="bg-water pb-[2px] font-medium ml-6 text-white rounded w-fit group flex items-center  disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100   hover:bg-darkwater active:bg-darkwater/75  text-sm h-8 px-3.5 justify-center"
               >
                 <span>Заказать воду</span>
               </button>

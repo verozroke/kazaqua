@@ -1,30 +1,34 @@
 <template>
   <div
     id="About"
-    class="pt-56 relative"
+    class="pt-0 lg:pt-56 relative"
   >
-    <span class="text-water font-bold absolute top-[144px] text-7xl px-7">О нас</span>
-    <div class="relative flex gap-5 rounded-lg min-h-96 ContactUs py-5 px-7 shadow-md bg-water border">
-      <div class="select-none absolute flex flex-col -top-[220px] right-[165px] z-20">
+    <span class="text-water font-bold static lg:absolute top-[144px] text-4xl lg:text-7xl px-0 lg:px-7">О
+      нас</span>
+    <div
+      class="relative flex-col items-center lg:items-start lg:flex-row flex gap-5 rounded-lg min-h-96 ContactUs px-7 py-8 shadow-md bg-water border"
+    >
+      <div class="select-none  static lg:absolute flex flex-col -top-[220px] right-[165px] z-20">
         <a
           href="/"
           aria-label="kazaqua logo"
-          class="font-black text-water text-7xl"
+          class="font-black text-white lg:text-water text-center lg:text-left text-4xl lg:text-7xl"
         >
           KAZAQUA
         </a>
-        <span class="text-black font-bold text-5xl leading-8">символ <span class="text-white">чистоты и
+        <span class="text-white text-center lg:text-left lg:text-black font-bold text-4xl lg:text-5xl leading-8">символ
+          <span class="text-white">чистоты и
             качества</span></span>
       </div>
       <div
-        class=" select-none image shadow-md absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-[600px] h-[500px]"
+        class=" select-none image shadow-md static lg:absolute -top-[150px] right-[1.75rem] z-10 rounded-lg bg-slate-100 w-full lg:w-[600px] h-[300px] lg:h-[500px]"
       >
         <NuxtImg
           class="w-full h-full rounded-lg object-cover object-center"
           src="https://images.unsplash.com/photo-1527066236128-2ff79f7b9705?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
       </div>
-      <div class="text-lg text-slate-200 max-w-[680px]">
+      <div class="text-base lg:text-lg text-slate-200 w-full lg:max-w-[680px]">
         Наша компания с более чем 20-летним опытом работы гордится тем, что является крупнейшим поставщиком чистой и
         качественной воды в регионе. Мы обслуживаем города Жезказган и Сатпаев, а также многочисленные промышленные и
         государственные объекты, обеспечивая надежное и стабильное водоснабжение. <br> <br>

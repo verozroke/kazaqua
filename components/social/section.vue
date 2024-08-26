@@ -1,11 +1,11 @@
 <template>
   <div
     id="Social"
-    class="max-w-7xl px-7"
+    class="max-w-7xl px-0 lg:px-7"
   >
     <div class="grid gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       <div class="max-w-xl lg:max-w-lg text-gray-300">
-        <h2 class=" text-water font-bold leading-10 text-7xl mb-7">Связь с нами
+        <h2 class=" text-water font-bold leading-10 text-4xl lg:text-7xl mb-7">Связь с нами
         </h2>
         <div class="flex items-center gap-2">
           <div class="flex items-center gap-2"><a
@@ -30,7 +30,7 @@
             </a></div>
         </div>
       </div>
-      <dl class="grid gap-x-8 gap-y-10 grid-cols-2 pt-2">
+      <dl class="grid gap-x-8 gap-y-10 grid-cols-2 pt-2 text-sm lg:text-base">
         <div class="flex flex-col items-start">
           <div class="rounded-md bg-water/5 p-2 ring-1 ring-white/10">
             <PhoneIcon class="h-6 w-6 text-water" />

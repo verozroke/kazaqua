@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-12 relative">
+  <div class="flex flex-col gap-32 lg:gap-60 relative">
     <HeroSection />
     <AboutUs />
     <AdvantagesSection />

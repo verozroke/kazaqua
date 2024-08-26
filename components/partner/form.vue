@@ -1,17 +1,18 @@
 <template>
   <div
     id="Partner"
-    class="flex gap-5 min-h-96 ContactUs py-8 px-7 shadow-md border rounded-lg"
+    class="flex-col lg:flex-row flex gap-5 min-h-96 ContactUs py-8 px-7 shadow-md border rounded-lg"
   >
-    <div class="w-[50%] flex flex-col gap-6">
-      <div class="text-7xl text-water font-bold">Стать партнером</div>
-      <div class="text-base flex-1 text-slate-600 max-w-96">Заполните форму ниже, чтобы присоединиться к числу наших
+    <div class="w-full lg:w-[50%] flex flex-col gap-6">
+      <div class="text-4xl lg:text-7xl text-water font-bold">Стать партнером</div>
+      <div class="text-sm lg:text-base flex-1 text-slate-600 max-w-96">Заполните форму ниже, чтобы присоединиться к
+        числу наших
         уважаемых партнеров и начать сотрудничество с крупнейшим поставщиком воды в регионе.</div>
       <NuxtImg src="/partner.svg" />
 
     </div>
-    <div class="w-[50%] flex justify-end">
-      <div class="bg-white  w-[70%] select-none rounded-md flex flex-col items-center py-10">
+    <div class="w-full lg:w-[50%] flex justify-center lg:justify-end">
+      <div class="bg-white w-full lg:w-[70%] select-none rounded-md flex flex-col items-center py-10">
         <FormKit
           type="form"
           style="width: 70%; display: flex; flex-direction: column;"

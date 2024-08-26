@@ -1,16 +1,17 @@
 <template>
   <div
     id="Order"
-    class="flex gap-5 rounded-lg min-h-96 ContactUs py-8 px-7 bg-water shadow-md"
+    class="flex-col lg:flex-row flex gap-5 rounded-lg min-h-96 ContactUs py-8 px-7 bg-water shadow-md"
   >
-    <div class="w-[50%] flex flex-col gap-6">
-      <div class="text-7xl text-white font-bold">Заказать воду</div>
-      <div class="text-base flex-1 text-slate-200 max-w-96">Заполните форму ниже, чтобы быстро и удобно заказать чистую
+    <div class="w-full lg:w-[50%] flex flex-col gap-6">
+      <div class="text-4xl lg:text-7xl text-white font-bold">Заказать воду</div>
+      <div class="text-sm lg:text-base flex-1 text-slate-200 max-w-96">Заполните форму ниже, чтобы быстро и удобно
+        заказать чистую
         и качественную воду KAZAQUA с доставкой на ваш адрес.</div>
       <NuxtImg src="/contact.png" />
     </div>
-    <div class="w-[50%] flex justify-end">
-      <div class="bg-white select-none shadow-md border w-[70%] rounded-md flex flex-col items-center py-10">
+    <div class="w-full lg:w-[50%] flex justify-center lg:justify-end">
+      <div class="bg-white select-none shadow-md border w-full lg:w-[70%] rounded-md flex flex-col items-center py-10">
         <FormKit
           type="form"
           style="width: 70%; display: flex; flex-direction: column;"
